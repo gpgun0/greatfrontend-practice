@@ -52,27 +52,3 @@ Array.prototype.myFilter = function (callbackFn, thisArg) {
   return A;
 };
 
-interface Array<T> {
-  test(callbackFn: (value: T) => boolean, thisArg?: any): Array<T>;
-}
-
-const isThisProductEven = function (element) {
-  console.log(this);
-  return (element * this) % 2 === 0;
-};
-
-const isThisProductEvenArrowFn = (element) => {
-  console.log(this);
-  return (element * this) % 2 === 0;
-};
-
-Array.prototype.test = function (callbackFn, thisArg) {
-  callbackFn(this);
-  isThisProductEvenArrowFn(3);
-  return this;
-};
-
-// [1, 2, 3].test(isThisProductEven);
-[1, 2, 3].test(isThisProductEvenArrowFn);
-// isThisProductEven(3);
-// isThisProductEvenArrowFn(3);
