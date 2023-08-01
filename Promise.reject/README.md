@@ -200,3 +200,33 @@ const rejected = Promise.reject(p);
 console.log(rejected === p); // false
 rejected.catch((v) => v).then(console.log); // 1
 ```
+
+이제 다음 코드의 결과를 예상할 수 있습니다.
+
+```js
+const p1 = Promise.resolve(Promise.reject(3));
+```
+
+Promise.resolve로 Promise를 감싸면, 그저 감싼 Promise와 동일한 Promise를 반환합니다.  
+사실상 아래 코드와 동일합니다.
+
+```js
+const p1 = Promise.reject(3);
+
+p1.catch(console.log); // 3
+
+p1.then(console.log); // nothing
+```
+
+Promise.reject로 Promise.resolve를 감싸보겠습니다.
+
+```js
+const p2 = Promise.reject(Promise.resolve(3));
+```
+
+resolve와 다르게 p2는 감싼 Promise와 동일하지 않습니다.  
+만약 3 값을 출력하고 싶다면 다음처럼 해야합니다.
+
+```js
+p2.catch((err) => err).then(console.log);
+```
