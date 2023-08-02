@@ -71,7 +71,7 @@ const fn = () => {
 fn();
 ```
 
-![](/Promise.reject/error_call_stack.png)
+![](/Promise.reject/images/error_call_stack.png)
 
 `errorFn`을 호출한 fn에게 에러가 전파돼서 catch문이 이 에러를 정상적으로 잡아낼 수 있습니다.
 
@@ -90,7 +90,7 @@ const asyncFn = () => {
 asyncFn();
 ```
 
-![](/Promise.reject/error_call_stack2.png)
+![](/Promise.reject/images/error_call_stack2.png)
 
 에러를 던졌지만 asyncFn으로 전파되지 않아 catch 블록에서 에러가 잡히지 않습니다.  
 
