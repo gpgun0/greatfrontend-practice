@@ -2,9 +2,15 @@
 
 # What?
 
-**JavaScript 코어 개념** 학습을 위해 [greatfrontend](https://www.greatfrontend.com/) 문제들의 **solution**과 **설명**을 기록합니다.
+[greatfrontend](https://www.greatfrontend.com/) 문제들의 **solution**과 **설명**을 기록합니다.
+
+## Why?
+
+**JavaScript 내장 함수** 또는 **기능 로직**을 *직접 구현*해봄으로써 JavaScript 코어 개념을 심도 있게 학습합니다.
 
 # How?
+
+잘못된 코드도 기록하여 왜 틀렸는지 이유를 설명합니다.
 
 정답 또는 오답 코드가 작동하는 과정을 최대한 **그림**으로 표현하였습니다. 
 
