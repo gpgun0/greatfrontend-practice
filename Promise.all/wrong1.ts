@@ -1,6 +1,6 @@
 export default function promiseAll(iterable: Array<any>): Promise<Array<any>> {
   return new Promise((resolve, reject) => {
-    const result = new Array(iterable.length);
+    const result = [];
 
     iterable.forEach(async (p, i) => {
       try {

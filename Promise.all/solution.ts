@@ -11,7 +11,7 @@ export default function promiseAll(iterable: Array<any>): Promise<Array<any>> {
     iterable.forEach(async (p, i) => {
       try {
         const response = await Promise.resolve(p);
-        // const response = await p;
+        // const response = await p; // 테스트 케이스를 통과하지만 await은 Promise 앞에만 써야한다.
         result[i] = response;
         unresolved -= 1;
 
