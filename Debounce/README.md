@@ -10,6 +10,11 @@
 [Problem](https://leetcode.com/problemset/javascript/)
 [Solution](https://github.com/gpgun0/leetcode/tree/master/2627-debounce)
 
+## Prerequisite
+
+- 클로저
+- this 바인딩
+
 ## Examples
 
 ```js
