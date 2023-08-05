@@ -2,13 +2,15 @@
 
 # What?
 
-[greatfrontend](https://www.greatfrontend.com/) 문제들의 **solution**과 **설명**을 기록합니다.
+[greatfrontend](https://www.greatfrontend.com/) 또는 [LeetCode](https://leetcode.com/problemset/javascript/) 자바스크립트 문제들의 **solution**과 **설명**을 기록합니다. 
 
-## Why?
+# Why?
 
 **JavaScript 내장 함수** 또는 **기능 로직**을 *직접 구현*해봄으로써 JavaScript 코어 개념을 심도 있게 학습합니다.
 
 # How?
+
+문제 풀이에 필요한 개념들을 설명합니다.
 
 잘못된 코드도 기록하여 왜 틀렸는지 설명합니다.
 
