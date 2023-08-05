@@ -5,6 +5,11 @@
 
 콜백 함수와 wait 시간을 인자로 받는 debounce 함수를 구현해봅시다. 앞에 설명을 따라 Debounce를 호출하면 콜백 함수 호출을 디바운스하는 함수를 반환해야 합니다.
 
+## Leet Code
+
+[Problem](https://leetcode.com/problemset/javascript/)
+[Solution](https://github.com/gpgun0/leetcode/tree/master/2627-debounce)
+
 ## Examples
 
 ```js
