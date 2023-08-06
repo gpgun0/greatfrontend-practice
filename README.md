@@ -16,4 +16,4 @@
 
 정답 또는 오답 코드가 작동하는 과정을 최대한 **그림**으로 표현하였습니다. 
 
-**ex.** [Promise.reject](https://github.com/gpgun0/greatfrontend-practice/tree/main/Promise.reject), [Debounce](https://github.com/gpgun0/greatfrontend-practice/tree/main/Debounce)
+**ex.** [Promise.reject](https://github.com/gpgun0/greatfrontend-practice/tree/main/Promise.reject), [Promise.all](https://github.com/gpgun0/greatfrontend-practice/tree/main/Promise.all), [Debounce](https://github.com/gpgun0/greatfrontend-practice/tree/main/Debounce), [Curry](https://github.com/gpgun0/greatfrontend-practice/tree/main/Curry)
