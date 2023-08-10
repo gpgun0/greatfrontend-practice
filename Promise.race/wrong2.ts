@@ -7,16 +7,15 @@ export default function promiseRace<T extends readonly unknown[] | []>(
     }
 
     iterable.forEach(async (value: any) => {
-      if (value instanceof Promise) {
-        try {
+      try {
+        if (value instanceof Promise) {
           const res = await value;
           resolve(res);
-        } catch (err) {
-          reject(err);
+        } else {
+          resolve(value);
         }
-      } else {
-        // resolve(Promise.resolve(3)) is equal to resolve(3)
-        resolve(value);
+      } catch (err) {
+        reject(err);
       }
     });
   });

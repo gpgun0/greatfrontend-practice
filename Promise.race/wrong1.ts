@@ -12,7 +12,7 @@ export default function promiseRace<T extends readonly unknown[] | []>(
   });
 }
 
-// 1 Fail 19 Passed
+// 3 Fail 17 Passed
 // promiseRace > multiple promises > all resolve > mixture
 // promiseRace > multiple promises > all resolve > many delayed
 // promiseRace > multiple promises > mix of resolve and reject > delayed reject
